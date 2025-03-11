@@ -143,9 +143,6 @@ erDiagram
     }
 ```
 
-### users表 - 用户信息
-// ... existing code ...
-
 ## 项目结构
 ```
 qqProject_001/
