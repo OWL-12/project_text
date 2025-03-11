@@ -41,6 +41,34 @@
   - 发送和接收消息
   - 本地消息缓存
   - 断线重连机制
+ 
+  - ```mermaid
+graph TD
+    subgraph "客户端"
+        A[Qt GUI界面] --> B[网络连接管理]
+        A --> C[消息处理器]
+        C <--> B
+        B <--> D[Socket客户端]
+    end
+    
+    subgraph "服务器"
+        E[Socket服务器] <--> F[连接管理器]
+        F --> G[用户会话管理]
+        F --> H[消息转发器]
+        H --> I[消息队列]
+        G --> J[认证服务]
+        J <--> K[(数据库)]
+        H <--> K
+    end
+    
+    D <--TCP/IP连接--> E
+    
+    style A fill:#90CAF9,stroke:#1565C0
+    style D fill:#A5D6A7,stroke:#2E7D32
+    style E fill:#A5D6A7,stroke:#2E7D32
+    style K fill:#FFCC80,stroke:#EF6C00
+```
+
 
 ## 通信协议
 自定义的应用层协议，基于JSON格式：
