@@ -51,8 +51,99 @@
 - 消息ID
 - 状态码和错误信息
 
+# QQ聊天应用
+
+// ... existing code ...
+
 ## 数据库设计
-应用使用MySQL数据库，主要表结构包括：
+应用使用MySQL数据库(8.0+)，主要表结构包括：
+
+### 数据库关系图
+```mermaid
+erDiagram
+    users ||--o{ friends : "添加"
+    users ||--o{ messages : "发送"
+    users ||--o{ groups : "创建"
+    users ||--o{ group_members : "加入"
+    users ||--o{ group_messages : "发送"
+    users ||--o{ friend_requests : "发起/接收"
+    users ||--o{ group_join_requests : "申请加入"
+    
+    groups ||--o{ group_members : "包含"
+    groups ||--o{ group_messages : "拥有"
+    groups ||--o{ group_join_requests : "接收"
+    
+    USERS {
+        int id PK
+        varchar username
+        varchar password
+        varchar avatar
+        varchar status
+        varchar signature
+    }
+    
+    FRIENDS {
+        int id PK
+        int user_id FK
+        int friend_id FK
+        enum status
+        timestamp created_at
+    }
+    
+    MESSAGES {
+        int id PK
+        int sender FK
+        int receiver FK
+        text content
+        timestamp timestamp
+        boolean read_status
+    }
+    
+    GROUPS {
+        int group_id PK
+        varchar group_name
+        int owner_id FK
+        varchar avatar
+        varchar description
+        timestamp created_at
+    }
+    
+    GROUP_MEMBERS {
+        int id PK
+        int group_id FK
+        int user_id FK
+        timestamp join_time
+        enum role
+    }
+    
+    GROUP_MESSAGES {
+        int id PK
+        int group_id FK
+        int sender FK
+        text content
+        timestamp timestamp
+    }
+    
+    FRIEND_REQUESTS {
+        int id PK
+        int requester_id FK
+        int addressee_id FK
+        enum status
+        varchar message
+        timestamp created_at
+    }
+    
+    GROUP_JOIN_REQUESTS {
+        int id PK
+        int user_id FK
+        int group_id FK
+        enum status
+        varchar message
+        timestamp created_at
+    }
+```
+
+### users表 - 用户信息
 // ... existing code ...
 
 ## 项目结构
@@ -72,8 +163,6 @@ qqProject_001/
 ├── socketClient.cpp/h       # 客户端Socket实现
 └── resources/               # 资源文件夹
 ```
-
-// ... existing code ...
 
 ## 项目亮点
 - 使用Qt信号槽机制实现界面与逻辑分离
