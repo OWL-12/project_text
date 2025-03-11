@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/QQ">
+        <file>image/动漫头像.png</file>
+        <file>image/关闭.png</file>
+        <file>image/最小化.png</file>
+        <file>image/搜索 .png</file>
+        <file>image/关闭 (1).png</file>
+        <file>image/最小化_2.png</file>
+        <file>image/男头像.png</file>
+        <file>image/女头像.png</file>
+        <file>image/头像 女孩.png</file>
+        <file>image/群聊.png</file>
+        <file>image/添加好友.png</file>
+        <file>image/三角形上.png</file>
+    </qresource>
+</RCC>

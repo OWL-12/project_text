@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QQClass</class>
+ <widget class="QWidget" name="QQClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QQ</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>420</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: qlineargradient(
+    x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #3B5998,    /* 柔和蓝色 */
+    stop: 0.5 #7B68EE,  /* 紫色 */
+    stop: 1 #B0E0E6     /* 浅蓝色 */
+);
+</string>
+   </property>
+   <widget class="QLabel" name="avatarlabel">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>70</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border-image: url(:/QQ/image/动漫头像.png);
+border-radius: 40px;
+border: 3px solid rgba(255, 255, 255, 180);
+background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>0</y>
+      <width>30</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+       background-color: transparent;
+  border-radius: 10px;
+    
+	border-image: url(:/QQ/image/关闭.png);
+    }
+    QPushButton:hover {
+      background-color: rgba(255, 255, 255, 50);
+    }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minButton">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>0</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+       background-color: transparent;
+  border-radius: 10px;
+    
+	
+	border-image: url(:/QQ/image/最小化.png);
+    }
+    QPushButton:hover {
+      background-color: rgba(255, 255, 255, 50);
+    }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>130</y>
+     <width>420</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QLineEdit" name="pdLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>70</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid #CCCCCC; /* 边框颜色 */
+    border-radius: 8px;        /* 圆角 */
+    padding-left: 10px;        /* 左侧内边距 */
+    font-size: 14px;           /* 字体大小 */
+    background-color: #F7F7F7; /* 背景色 */
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>125</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="userBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QComboBox {
+    border: none;  /* 移除默认边框 */
+    border-bottom: 1px solid #CCCCCC;  /* 默认底部灰色线 */
+    background: transparent;  /* 背景透明 */
+    font-size: 16px;
+    color: #333;
+}
+
+/* 鼠标悬停时，底部线变蓝 */
+QComboBox:hover {
+    border-bottom: 1px solid #0078D7;
+}
+
+/* 输入框聚焦时，底部线加粗变深蓝 */
+QComboBox:focus {
+    border-bottom: 2px solid #005A9E;
+}
+
+
+</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+    <property name="duplicatesEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="userLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>270</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>账号</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QQ.qrc"/>
+ </resources>
+ <connections/>
+</ui>
