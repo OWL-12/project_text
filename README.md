@@ -41,8 +41,15 @@
   - 发送和接收消息
   - 本地消息缓存
   - 断线重连机制
- 
-  - ```mermaid
+ # QQ聊天应用
+
+// ... existing code ...
+
+## 网络架构
+项目采用经典的C/S（客户端/服务器）架构：
+
+### 网络架构图
+```mermaid
 graph TD
     subgraph "客户端"
         A[Qt GUI界面] --> B[网络连接管理]
@@ -68,6 +75,9 @@ graph TD
     style E fill:#A5D6A7,stroke:#2E7D32
     style K fill:#FFCC80,stroke:#EF6C00
 ```
+
+- **服务器端**：
+// ... existing code ...
 
 
 ## 通信协议
