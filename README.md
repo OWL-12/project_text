@@ -76,10 +76,6 @@ graph TD
     style K fill:#FFCC80,stroke:#EF6C00
 ```
 
-- **服务器端**：
-// ... existing code ...
-
-
 ## 通信协议
 自定义的应用层协议，基于JSON格式：
 - 消息类型标识
