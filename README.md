@@ -214,14 +214,36 @@ qqProject_001/
 - 添加消息推送和通知机制
 - 集成第三方社交平台登录
 
-![)EUV)Q}220O %0ND(9J8(J5](https://github.com/user-attachments/assets/5234c032-0bb6-4dbe-a64c-1e831ccfae88)
-![image](https://github.com/user-attachments/assets/0e83cbea-186d-48cf-9a29-dffaaa01161b)
-![image](https://github.com/user-attachments/assets/a001cf83-0fb9-4afc-bd19-9327f1c89bf0)
-![image](https://github.com/user-attachments/assets/68b8c775-0563-4a85-ade0-0c97712d40b4)
-![image](https://github.com/user-attachments/assets/e06252b2-ab30-4664-ad18-7e0d409bcda6)
-![image](https://github.com/user-attachments/assets/c779beee-5d6b-480e-9f81-d3a5757d9083)
-![image](https://github.com/user-attachments/assets/8f59ca21-7e0b-40b5-ad93-c37b2a75d04e)
+# project_text
 
+## 应用界面展示
+
+<div align="center">
+
+### 登录界面
+<img src="https://github.com/user-attachments/assets/5234c032-0bb6-4dbe-a64c-1e831ccfae88" width="500" alt="登录界面">
+<p><i>用户登录功能，支持账号密码验证</i></p>
+
+### 主界面
+<img src="https://github.com/user-attachments/assets/0e83cbea-186d-48cf-9a29-dffaaa01161b" width="500" alt="消息列表界面">
+<p><i>消息列表主界面，展示最近联系人</i></p>
+
+### 好友列表
+<img src="https://github.com/user-attachments/assets/68b8c775-0563-4a85-ade0-0c97712d40b4" width="500" alt="好友列表界面">
+<p><i>好友列表界面，管理所有联系人</i></p>
+
+### 聊天功能
+<img src="https://github.com/user-attachments/assets/e06252b2-ab30-4664-ad18-7e0d409bcda6" width="500" alt="私聊界面">
+<p><i>私聊界面，支持一对一实时消息交流</i></p>
+
+<img src="https://github.com/user-attachments/assets/c779beee-5d6b-480e-9f81-d3a5757d9083" width="500" alt="群聊界面">
+<p><i>群聊界面，支持多人实时消息交流</i></p>
+
+### 好友与群组管理
+<img src="https://github.com/user-attachments/assets/8f59ca21-7e0b-40b5-ad93-c37b2a75d04e" width="500" alt="添加好友/群聊">
+<p><i>添加好友和群聊功能，支持搜索和申请</i></p>
+
+</div>
 
 
 
